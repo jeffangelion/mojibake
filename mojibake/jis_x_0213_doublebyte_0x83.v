@@ -1,0 +1,192 @@
+module mojibake
+
+const jis_x_0213_doublebyte_0x83 = {
+	0x40: [`\u30A1`].string() // U+30A1 KATAKANA LETTER SMALL A
+	0x41: [`\u30A2`].string() // U+30A2 KATAKANA LETTER A
+	0x42: [`\u30A3`].string() // U+30A3 KATAKANA LETTER SMALL I
+	0x43: [`\u30A4`].string() // U+30A4 KATAKANA LETTER I
+	0x44: [`\u30A5`].string() // U+30A5 KATAKANA LETTER SMALL U
+	0x45: [`\u30A6`].string() // U+30A6 KATAKANA LETTER U
+	0x46: [`\u30A7`].string() // U+30A7 KATAKANA LETTER SMALL E
+	0x47: [`\u30A8`].string() // U+30A8 KATAKANA LETTER E
+	0x48: [`\u30A9`].string() // U+30A9 KATAKANA LETTER SMALL O
+	0x49: [`\u30AA`].string() // U+30AA KATAKANA LETTER O
+	0x4A: [`\u30AB`].string() // U+30AB KATAKANA LETTER KA
+	0x4B: [`\u30AC`].string() // U+30AC KATAKANA LETTER GA
+	0x4C: [`\u30AD`].string() // U+30AD KATAKANA LETTER KI
+	0x4D: [`\u30AE`].string() // U+30AE KATAKANA LETTER GI
+	0x4E: [`\u30AF`].string() // U+30AF KATAKANA LETTER KU
+	0x4F: [`\u30B0`].string() // U+30B0 KATAKANA LETTER GU
+	0x50: [`\u30B1`].string() // U+30B1 KATAKANA LETTER KE
+	0x51: [`\u30B2`].string() // U+30B2 KATAKANA LETTER GE
+	0x52: [`\u30B3`].string() // U+30B3 KATAKANA LETTER KO
+	0x53: [`\u30B4`].string() // U+30B4 KATAKANA LETTER GO
+	0x54: [`\u30B5`].string() // U+30B5 KATAKANA LETTER SA
+	0x55: [`\u30B6`].string() // U+30B6 KATAKANA LETTER ZA
+	0x56: [`\u30B7`].string() // U+30B7 KATAKANA LETTER SI
+	0x57: [`\u30B8`].string() // U+30B8 KATAKANA LETTER ZI
+	0x58: [`\u30B9`].string() // U+30B9 KATAKANA LETTER SU
+	0x59: [`\u30BA`].string() // U+30BA KATAKANA LETTER ZU
+	0x5A: [`\u30BB`].string() // U+30BB KATAKANA LETTER SE
+	0x5B: [`\u30BC`].string() // U+30BC KATAKANA LETTER ZE
+	0x5C: [`\u30BD`].string() // U+30BD KATAKANA LETTER SO
+	0x5D: [`\u30BE`].string() // U+30BE KATAKANA LETTER ZO
+	0x5E: [`\u30BF`].string() // U+30BF KATAKANA LETTER TA
+	0x5F: [`\u30C0`].string() // U+30C0 KATAKANA LETTER DA
+	0x60: [`\u30C1`].string() // U+30C1 KATAKANA LETTER TI
+	0x61: [`\u30C2`].string() // U+30C2 KATAKANA LETTER DI
+	0x62: [`\u30C3`].string() // U+30C3 KATAKANA LETTER SMALL TU
+	0x63: [`\u30C4`].string() // U+30C4 KATAKANA LETTER TU
+	0x64: [`\u30C5`].string() // U+30C5 KATAKANA LETTER DU
+	0x65: [`\u30C6`].string() // U+30C6 KATAKANA LETTER TE
+	0x66: [`\u30C7`].string() // U+30C7 KATAKANA LETTER DE
+	0x67: [`\u30C8`].string() // U+30C8 KATAKANA LETTER TO
+	0x68: [`\u30C9`].string() // U+30C9 KATAKANA LETTER DO
+	0x69: [`\u30CA`].string() // U+30CA KATAKANA LETTER NA
+	0x6A: [`\u30CB`].string() // U+30CB KATAKANA LETTER NI
+	0x6B: [`\u30CC`].string() // U+30CC KATAKANA LETTER NU
+	0x6C: [`\u30CD`].string() // U+30CD KATAKANA LETTER NE
+	0x6D: [`\u30CE`].string() // U+30CE KATAKANA LETTER NO
+	0x6E: [`\u30CF`].string() // U+30CF KATAKANA LETTER HA
+	0x6F: [`\u30D0`].string() // U+30D0 KATAKANA LETTER BA
+	0x70: [`\u30D1`].string() // U+30D1 KATAKANA LETTER PA
+	0x71: [`\u30D2`].string() // U+30D2 KATAKANA LETTER HI
+	0x72: [`\u30D3`].string() // U+30D3 KATAKANA LETTER BI
+	0x73: [`\u30D4`].string() // U+30D4 KATAKANA LETTER PI
+	0x74: [`\u30D5`].string() // U+30D5 KATAKANA LETTER HU
+	0x75: [`\u30D6`].string() // U+30D6 KATAKANA LETTER BU
+	0x76: [`\u30D7`].string() // U+30D7 KATAKANA LETTER PU
+	0x77: [`\u30D8`].string() // U+30D8 KATAKANA LETTER HE
+	0x78: [`\u30D9`].string() // U+30D9 KATAKANA LETTER BE
+	0x79: [`\u30DA`].string() // U+30DA KATAKANA LETTER PE
+	0x7A: [`\u30DB`].string() // U+30DB KATAKANA LETTER HO
+	0x7B: [`\u30DC`].string() // U+30DC KATAKANA LETTER BO
+	0x7C: [`\u30DD`].string() // U+30DD KATAKANA LETTER PO
+	0x7D: [`\u30DE`].string() // U+30DE KATAKANA LETTER MA
+	0x7E: [`\u30DF`].string() // U+30DF KATAKANA LETTER MI
+	0x80: [`\u30E0`].string() // U+30E0 KATAKANA LETTER MU
+	0x81: [`\u30E1`].string() // U+30E1 KATAKANA LETTER ME
+	0x82: [`\u30E2`].string() // U+30E2 KATAKANA LETTER MO
+	0x83: [`\u30E3`].string() // U+30E3 KATAKANA LETTER SMALL YA
+	0x84: [`\u30E4`].string() // U+30E4 KATAKANA LETTER YA
+	0x85: [`\u30E5`].string() // U+30E5 KATAKANA LETTER SMALL YU
+	0x86: [`\u30E6`].string() // U+30E6 KATAKANA LETTER YU
+	0x87: [`\u30E7`].string() // U+30E7 KATAKANA LETTER SMALL YO
+	0x88: [`\u30E8`].string() // U+30E8 KATAKANA LETTER YO
+	0x89: [`\u30E9`].string() // U+30E9 KATAKANA LETTER RA
+	0x8A: [`\u30EA`].string() // U+30EA KATAKANA LETTER RI
+	0x8B: [`\u30EB`].string() // U+30EB KATAKANA LETTER RU
+	0x8C: [`\u30EC`].string() // U+30EC KATAKANA LETTER RE
+	0x8D: [`\u30ED`].string() // U+30ED KATAKANA LETTER RO
+	0x8E: [`\u30EE`].string() // U+30EE KATAKANA LETTER SMALL WA
+	0x8F: [`\u30EF`].string() // U+30EF KATAKANA LETTER WA
+	0x90: [`\u30F0`].string() // U+30F0 KATAKANA LETTER WI
+	0x91: [`\u30F1`].string() // U+30F1 KATAKANA LETTER WE
+	0x92: [`\u30F2`].string() // U+30F2 KATAKANA LETTER WO
+	0x93: [`\u30F3`].string() // U+30F3 KATAKANA LETTER N
+	0x94: [`\u30F4`].string() // U+30F4 KATAKANA LETTER VU
+	0x95: [`\u30F5`].string() // U+30F5 KATAKANA LETTER SMALL KA
+	0x96: [`\u30F6`].string() // U+30F6 KATAKANA LETTER SMALL KE
+	0x97: [`\u30AB`,`\u309A`].string() // U+30AB+309A
+	0x98: [`\u30AD`,`\u309A`].string() // U+30AD+309A
+	0x99: [`\u30AF`,`\u309A`].string() // U+30AF+309A
+	0x9A: [`\u30B1`,`\u309A`].string() // U+30B1+309A
+	0x9B: [`\u30B3`,`\u309A`].string() // U+30B3+309A
+	0x9C: [`\u30BB`,`\u309A`].string() // U+30BB+309A
+	0x9D: [`\u30C4`,`\u309A`].string() // U+30C4+309A
+	0x9E: [`\u30C8`,`\u309A`].string() // U+30C8+309A
+	0x9F: [`\u0391`].string() // U+0391 GREEK CAPITAL LETTER ALPHA
+	0xA0: [`\u0392`].string() // U+0392 GREEK CAPITAL LETTER BETA
+	0xA1: [`\u0393`].string() // U+0393 GREEK CAPITAL LETTER GAMMA
+	0xA2: [`\u0394`].string() // U+0394 GREEK CAPITAL LETTER DELTA
+	0xA3: [`\u0395`].string() // U+0395 GREEK CAPITAL LETTER EPSILON
+	0xA4: [`\u0396`].string() // U+0396 GREEK CAPITAL LETTER ZETA
+	0xA5: [`\u0397`].string() // U+0397 GREEK CAPITAL LETTER ETA
+	0xA6: [`\u0398`].string() // U+0398 GREEK CAPITAL LETTER THETA
+	0xA7: [`\u0399`].string() // U+0399 GREEK CAPITAL LETTER IOTA
+	0xA8: [`\u039A`].string() // U+039A GREEK CAPITAL LETTER KAPPA
+	0xA9: [`\u039B`].string() // U+039B GREEK CAPITAL LETTER LAMDA
+	0xAA: [`\u039C`].string() // U+039C GREEK CAPITAL LETTER MU
+	0xAB: [`\u039D`].string() // U+039D GREEK CAPITAL LETTER NU
+	0xAC: [`\u039E`].string() // U+039E GREEK CAPITAL LETTER XI
+	0xAD: [`\u039F`].string() // U+039F GREEK CAPITAL LETTER OMICRON
+	0xAE: [`\u03A0`].string() // U+03A0 GREEK CAPITAL LETTER PI
+	0xAF: [`\u03A1`].string() // U+03A1 GREEK CAPITAL LETTER RHO
+	0xB0: [`\u03A3`].string() // U+03A3 GREEK CAPITAL LETTER SIGMA
+	0xB1: [`\u03A4`].string() // U+03A4 GREEK CAPITAL LETTER TAU
+	0xB2: [`\u03A5`].string() // U+03A5 GREEK CAPITAL LETTER UPSILON
+	0xB3: [`\u03A6`].string() // U+03A6 GREEK CAPITAL LETTER PHI
+	0xB4: [`\u03A7`].string() // U+03A7 GREEK CAPITAL LETTER CHI
+	0xB5: [`\u03A8`].string() // U+03A8 GREEK CAPITAL LETTER PSI
+	0xB6: [`\u03A9`].string() // U+03A9 GREEK CAPITAL LETTER OMEGA
+	0xB7: [`\u2664`].string() // U+2664 WHITE SPADE SUIT
+	0xB8: [`\u2660`].string() // U+2660 BLACK SPADE SUIT
+	0xB9: [`\u2662`].string() // U+2662 WHITE DIAMOND SUIT
+	0xBA: [`\u2666`].string() // U+2666 BLACK DIAMOND SUIT
+	0xBB: [`\u2661`].string() // U+2661 WHITE HEART SUIT
+	0xBC: [`\u2665`].string() // U+2665 BLACK HEART SUIT
+	0xBD: [`\u2667`].string() // U+2667 WHITE CLUB SUIT
+	0xBE: [`\u2663`].string() // U+2663 BLACK CLUB SUIT
+	0xBF: [`\u03B1`].string() // U+03B1 GREEK SMALL LETTER ALPHA
+	0xC0: [`\u03B2`].string() // U+03B2 GREEK SMALL LETTER BETA
+	0xC1: [`\u03B3`].string() // U+03B3 GREEK SMALL LETTER GAMMA
+	0xC2: [`\u03B4`].string() // U+03B4 GREEK SMALL LETTER DELTA
+	0xC3: [`\u03B5`].string() // U+03B5 GREEK SMALL LETTER EPSILON
+	0xC4: [`\u03B6`].string() // U+03B6 GREEK SMALL LETTER ZETA
+	0xC5: [`\u03B7`].string() // U+03B7 GREEK SMALL LETTER ETA
+	0xC6: [`\u03B8`].string() // U+03B8 GREEK SMALL LETTER THETA
+	0xC7: [`\u03B9`].string() // U+03B9 GREEK SMALL LETTER IOTA
+	0xC8: [`\u03BA`].string() // U+03BA GREEK SMALL LETTER KAPPA
+	0xC9: [`\u03BB`].string() // U+03BB GREEK SMALL LETTER LAMDA
+	0xCA: [`\u03BC`].string() // U+03BC GREEK SMALL LETTER MU
+	0xCB: [`\u03BD`].string() // U+03BD GREEK SMALL LETTER NU
+	0xCC: [`\u03BE`].string() // U+03BE GREEK SMALL LETTER XI
+	0xCD: [`\u03BF`].string() // U+03BF GREEK SMALL LETTER OMICRON
+	0xCE: [`\u03C0`].string() // U+03C0 GREEK SMALL LETTER PI
+	0xCF: [`\u03C1`].string() // U+03C1 GREEK SMALL LETTER RHO
+	0xD0: [`\u03C3`].string() // U+03C3 GREEK SMALL LETTER SIGMA
+	0xD1: [`\u03C4`].string() // U+03C4 GREEK SMALL LETTER TAU
+	0xD2: [`\u03C5`].string() // U+03C5 GREEK SMALL LETTER UPSILON
+	0xD3: [`\u03C6`].string() // U+03C6 GREEK SMALL LETTER PHI
+	0xD4: [`\u03C7`].string() // U+03C7 GREEK SMALL LETTER CHI
+	0xD5: [`\u03C8`].string() // U+03C8 GREEK SMALL LETTER PSI
+	0xD6: [`\u03C9`].string() // U+03C9 GREEK SMALL LETTER OMEGA
+	0xD7: [`\u03C2`].string() // U+03C2 GREEK SMALL LETTER FINAL SIGMA
+	0xD8: [`\u24F5`].string() // U+24F5 DOUBLE CIRCLED DIGIT ONE
+	0xD9: [`\u24F6`].string() // U+24F6 DOUBLE CIRCLED DIGIT TWO
+	0xDA: [`\u24F7`].string() // U+24F7 DOUBLE CIRCLED DIGIT THREE
+	0xDB: [`\u24F8`].string() // U+24F8 DOUBLE CIRCLED DIGIT FOUR
+	0xDC: [`\u24F9`].string() // U+24F9 DOUBLE CIRCLED DIGIT FIVE
+	0xDD: [`\u24FA`].string() // U+24FA DOUBLE CIRCLED DIGIT SIX
+	0xDE: [`\u24FB`].string() // U+24FB DOUBLE CIRCLED DIGIT SEVEN
+	0xDF: [`\u24FC`].string() // U+24FC DOUBLE CIRCLED DIGIT EIGHT
+	0xE0: [`\u24FD`].string() // U+24FD DOUBLE CIRCLED DIGIT NINE
+	0xE1: [`\u24FE`].string() // U+24FE DOUBLE CIRCLED NUMBER TEN
+	0xE2: [`\u2616`].string() // U+2616 WHITE SHOGI PIECE
+	0xE3: [`\u2617`].string() // U+2617 BLACK SHOGI PIECE
+	0xE4: [`\u3020`].string() // U+3020 POSTAL MARK FACE
+	0xE5: [`\u260E`].string() // U+260E BLACK TELEPHONE
+	0xE6: [`\u2600`].string() // U+2600 BLACK SUN WITH RAYS
+	0xE7: [`\u2601`].string() // U+2601 CLOUD
+	0xE8: [`\u2602`].string() // U+2602 UMBRELLA
+	0xE9: [`\u2603`].string() // U+2603 SNOWMAN
+	0xEA: [`\u2668`].string() // U+2668 HOT SPRINGS
+	0xEB: [`\u25B1`].string() // U+25B1 WHITE PARALLELOGRAM
+	0xEC: [`\u31F0`].string() // U+31F0 KATAKANA LETTER SMALL KU
+	0xED: [`\u31F1`].string() // U+31F1 KATAKANA LETTER SMALL SI
+	0xEE: [`\u31F2`].string() // U+31F2 KATAKANA LETTER SMALL SU
+	0xEF: [`\u31F3`].string() // U+31F3 KATAKANA LETTER SMALL TO
+	0xF0: [`\u31F4`].string() // U+31F4 KATAKANA LETTER SMALL NU
+	0xF1: [`\u31F5`].string() // U+31F5 KATAKANA LETTER SMALL HA
+	0xF2: [`\u31F6`].string() // U+31F6 KATAKANA LETTER SMALL HI
+	0xF3: [`\u31F7`].string() // U+31F7 KATAKANA LETTER SMALL HU
+	0xF4: [`\u31F8`].string() // U+31F8 KATAKANA LETTER SMALL HE
+	0xF5: [`\u31F9`].string() // U+31F9 KATAKANA LETTER SMALL HO
+	0xF6: [`\u31F7`,`\u309A`].string() // U+31F7+309A
+	0xF7: [`\u31FA`].string() // U+31FA KATAKANA LETTER SMALL MU
+	0xF8: [`\u31FB`].string() // U+31FB KATAKANA LETTER SMALL RA
+	0xF9: [`\u31FC`].string() // U+31FC KATAKANA LETTER SMALL RI
+	0xFA: [`\u31FD`].string() // U+31FD KATAKANA LETTER SMALL RU
+	0xFB: [`\u31FE`].string() // U+31FE KATAKANA LETTER SMALL RE
+	0xFC: [`\u31FF`].string() // U+31FF KATAKANA LETTER SMALL RO
+}
