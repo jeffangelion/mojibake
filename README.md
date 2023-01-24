@@ -1,9 +1,9 @@
 # Mojibake
 > Mojibake (Japanese: 文字化け; IPA: [mod͡ʑibake], "character transformation") is the garbled text that is the result of text being decoded using an unintended character encoding.
 
-Mojibake is V library JIS X 0213:2004 -> UTF-8 text encoding conversion
+Mojibake is V library JIS X 0213:2004 ↔ UTF-8 text encoding conversion
 ## License
-LGPL
+LGPL-3.0-or-later
 ## Links
 1. [Main repo](https://codeberg.org/jeffangelion/mojibake)
 2. [GitHub mirror](https://codeberg.org/jeffangelion/mojibake)
